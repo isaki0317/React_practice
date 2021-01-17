@@ -1,7 +1,7 @@
 import React from "react";
 
 //props.～～ または、childrenで要素を取り出す
-const ColorfulMessage = (props) => {
+export const ColorfulMessage = (props) => {
   //分割代入で記述量を減らす(props.color等)
   const { color, children } = props;
   const contentStyle = {
@@ -12,4 +12,4 @@ const ColorfulMessage = (props) => {
   return <p style={contentStyle}>{children}</p>;
 };
 
-export default ColorfulMessage;
+//export default ColorfulMessage;
